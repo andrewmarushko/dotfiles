@@ -646,7 +646,9 @@ cursor:
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
-  program: /opt/homebrew/bin/fish
+  #shell for INTEL PROCCESSORS
+  program: /usr/local/bin/fish
+    #program: /opt/homebrew/bin/fish
 # Startup directory
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
