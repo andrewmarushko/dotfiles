@@ -1,3 +1,4 @@
+vim.g.mapleader = " "
 local keymap = vim.keymap
 
 keymap.set('n', 'x', '"_x"')
@@ -25,7 +26,10 @@ keymap.set('', 'sj', '<C-w>j')
 keymap.set('', 'sl', '<C-w>l')
 
 -- Resize window
-keymap.set('n', '<C-w><left>', '<C-w><') keymap.set('n', '<C-w><right>', '<C-w>>')
+keymap.set('n', '<C-w><left>', '<C-w><')
+keymap.set('n', '<C-w><right>', '<C-w>>')
 keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
 
+keymap.set("n", "<leader>dh", ":nohl<CR>")
+keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")

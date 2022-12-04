@@ -1,10 +1,11 @@
 vim.cmd("autocmd!")
-
+vim.opt.completeopt = "menu,menuone,noselect"
 vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'
 vim.opt.fileencoding = 'utf-8'
 
 vim.wo.number = true
+vim.wo.relativenumber = true
 
 vim.opt.title = true
 vim.opt.autoindent = true
@@ -22,8 +23,6 @@ vim.opt.inccommand = 'split'
 vim.opt.ignorecase = true -- Case insensitive searching UNLESS /C or capital in search
 vim.opt.smarttab = true
 vim.opt.breakindent = true
-vim.opt.ai = true
-vim.opt.si = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.wrap = false -- No Wrap lines

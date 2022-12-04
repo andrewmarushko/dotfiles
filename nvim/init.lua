@@ -3,7 +3,7 @@ require('highlight')
 require('macos')
 require('maps')
 require('setup-plugins')
-require('grovebox')
+require('gruvebox')
 
 local has = vim.fn.has
 local is_mac = has "macunix"
