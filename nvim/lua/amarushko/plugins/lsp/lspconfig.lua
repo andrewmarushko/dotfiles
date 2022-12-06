@@ -109,3 +109,5 @@ lspconfig["sumneko_lua"].setup({
     },
   },
 })
+
+lspconfig.angularls.setup({})
