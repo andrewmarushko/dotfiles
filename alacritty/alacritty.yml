@@ -639,9 +639,8 @@ cursor:
 #   - (Windows) powershell
 shell:
   #shell for INTEL PROCCESSORS
-  program:
-    /usr/local/bin/fish
-    #program: /opt/homebrew/bin/fish
+  #program: /usr/local/bin/fish
+  program: /opt/homebrew/bin/fish
 # Startup directory
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
