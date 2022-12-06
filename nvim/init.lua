@@ -1,13 +1,16 @@
-require('base')
-require('highlight')
-require('macos')
-require('maps')
-require('setup-plugins')
-require('gruvebox')
-
-local has = vim.fn.has
-local is_mac = has "macunix"
-
-if is_mac then
-  require('macos')
-end
+require("amarushko.plugins-setup")
+require("amarushko.core.options")
+require("amarushko.core.keymaps")
+require("amarushko.core.colorscheme")
+require("amarushko.plugins.comment")
+require("amarushko.plugins.nvim-tree")
+require("amarushko.plugins.lualine")
+require("amarushko.plugins.telescope")
+require("amarushko.plugins.nvim-cmp")
+require("amarushko.plugins.lsp.mason")
+require("amarushko.plugins.lsp.lspsaga")
+require("amarushko.plugins.lsp.lspconfig")
+require("amarushko.plugins.lsp.null-ls")
+require("amarushko.plugins.autopairs")
+require("amarushko.plugins.treesitter")
+require("amarushko.plugins.gitsigns")
