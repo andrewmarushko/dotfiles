@@ -1,0 +1,11 @@
+.DS_Store
+configstore/
+flutter/
+nvim.back/
+tmp/
+yarn/
+
+github-copilot
+karabiner
+raycast
+thefuck
