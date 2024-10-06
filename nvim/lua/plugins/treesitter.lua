@@ -11,10 +11,6 @@ return {
 
     -- configure treesitter
     treesitter.setup({ -- enable syntax highlighting
-      auto_install = true,
-      modules = {},
-      sync_install = true,
-      ignore_install = {},
       highlight = {
         enable = true,
       },
@@ -36,12 +32,16 @@ return {
         "prisma",
         "markdown",
         "markdown_inline",
+        "svelte",
+        "graphql",
         "bash",
         "lua",
         "vim",
         "dockerfile",
         "gitignore",
+        "query",
         "vimdoc",
+        "c",
       },
       incremental_selection = {
         enable = true,
