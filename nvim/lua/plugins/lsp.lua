@@ -176,39 +176,14 @@ return {
         capabilities = capabilities,
       })
 
-      function get_python_path()
-        -- Check if there's an active virtual environment
-        local venv_path = os.getenv("VIRTUAL_ENV")
-        if venv_path then
-          return venv_path .. "/bin/python3"
-        else
-          -- get os name
-          local os_name = require("utils").get_os()
-          -- get os interpreter path
-          if os_name == "windows" then
-            return "C:/python312"
-          elseif os_name == "linux" then
-            return "/usr/bin/python3"
-          else
-            return nil
-          end
-          -- Fallback to global Python interpreter
-        end
-      end
-
       lspconfig.pylsp.setup({
         capabilties = capabilities,
         settings = {
-          python = {
-            pythonPath = get_python_path(),
-          },
+          python = {},
         },
       })
 
       lspconfig.marksman.setup({
-        capabilties = capabilities,
-      })
-      lspconfig.gleam.setup({
         capabilties = capabilities,
       })
     end,
